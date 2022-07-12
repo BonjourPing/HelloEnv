@@ -369,6 +369,9 @@ function! OnReconfig(vim_root_file)
     "inoremap {              {}<ESC>i
     "inoremap {}             {}<ESC>a
 
+    "+++++++++ Shell语言相关设置 ++++++++
+    "Shell语言文件后缀
+    autocmd BufNewFile,BufRead *.bashrc set filetype=sh
 
     "========= Others and temp =========
     "let g:go_doc_keywordprg_enabled = 0
